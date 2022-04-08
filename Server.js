@@ -4,7 +4,7 @@ if(process.env.NODE_ENV !== 'production') {
 
 const http = require('http');
 const app = require('./src/App');
-const port = process.env.PORT || 4000;
+let port = process.env.PORT || 4000;
 
 const server = http.createServer(app);
 server.listen(port, () => {
